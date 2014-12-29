@@ -1,0 +1,13 @@
+def power_of_four(n)
+  n.to_s(4).scan(/1/).size == 1
+end
+
+# seems to work
+# need to find out more about bases. Base of 4 should avoid "power of 2" conflict that binary has.
+
+def power_of_four_log(n)
+  Math.log(n, 4) %1 == 0
+end
+
+# logs are cool but I'm worried about floats once "n" gets really large
+# potentially need a loop that shifts down 2 in binary and checks if true 
