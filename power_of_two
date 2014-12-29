@@ -1,0 +1,5 @@
+def power_of_two(n)
+  n & (n-1) == 0
+  end
+
+  # because binary (1, 2, 4, 8, 16, 32, 64, 128) then this is true beacause 00000100 & 00000011 == 0 (for the case of 4). 
